@@ -6,3 +6,7 @@ let heightCarro = 40;
 function mostraCarro(){
   image(imgCar1, xCarros, yCarros, widthCarro, heightCarro);
 }
+
+function moveCarro(){
+  xCarros = xCarros - 2;
+}

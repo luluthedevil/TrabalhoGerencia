@@ -5,4 +5,5 @@ function setup() {
 function draw() {
   background(estrada);
   mostraCarro();
+  moveCarro();
 }
