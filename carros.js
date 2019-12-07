@@ -1,12 +1,18 @@
-let xCarros = 350;
+let xCarros = 550;
 let yCarros = 40;
 let widthCarro = 50;
 let heightCarro = 40;
 
 function mostraCarro(){
-  image(imgCar1, xCarros, yCarros, widthCarro, heightCarro);
+  image(imgCarro1, xCarros, yCarros, widthCarro, heightCarro);
 }
 
 function moveCarro(){
-  xCarros = xCarros - 2;
+  xCarros = xCarros - 5;
+}
+
+function voltaPosicaoInicialCarro(){
+  if(xCarros < -40){
+    xCarros = 550;
+  }
 }
