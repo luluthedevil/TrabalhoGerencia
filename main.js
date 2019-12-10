@@ -5,4 +5,7 @@ function setup() {
 function draw() {
   background(imagemFundo);
   mostrarPersonagem();
+  moverPersonagem();
+  mostrarPontos();
+  contarPontos();
 }
