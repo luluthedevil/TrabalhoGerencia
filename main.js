@@ -7,4 +7,8 @@ function draw() {
   mostraCarro();
   moveCarro();
   voltaPosicaoInicialCarro();
+  mostrarPersonagem();
+  moverPersonagem();
+  mostrarPontos();
+  contarPontos();
 }
