@@ -1,17 +1,18 @@
 let imagemFundo;
 let personagem;
 
-let carro1;
-let carro2;
-let carro3;
+let imgCarro1;
+let imgCarro2;
+let imgCarro3;
+let imgCarros;
+
 
 function preload(){
     imagemFundo = loadImage("img/estrada.png");
     personagem = loadImage("img/ator-1.png");
     
-    carro1 = loadImage("img/carro-1.png");
-    carro2 = loadImage("img/carro-2.png");
-    carro3 = loadImage("img/carro-3.png");
-    
-    let carros = [carro1, carro2, carro3];
+    imgCarro1 = loadImage("img/carro-1.png");
+    imgCarro2 = loadImage("img/carro-2.png");
+    imgCarro3 = loadImage("img/carro-3.png");
+    imgCarros = [imgCarro1, imgCarro2, imgCarro3, imgCarro1, imgCarro2, imgCarro3];
 }
