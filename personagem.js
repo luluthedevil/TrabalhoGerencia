@@ -34,6 +34,7 @@ function verificarColisao() {
     colidiu = collideRectCircle(xCarros[i], yCarros[i], widthCarro, heightCarro, xPersonagem, yPersonagem, 15);
     if(colidiu){
       voltar();
+      somDeColisao.play();
       if(pontos > 0){
         pontos--;
       }
@@ -45,6 +46,7 @@ function contarPontos(){
     if(yPersonagem < 15){
       pontos++;
       voltar();
+      somDePonto.play();
     }
 }
 
