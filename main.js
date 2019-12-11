@@ -9,6 +9,7 @@ function draw() {
   voltaPosicaoInicialCarro();
   mostrarPersonagem();
   moverPersonagem();
+  verificarColisao();
   mostrarPontos();
   contarPontos();
 }
