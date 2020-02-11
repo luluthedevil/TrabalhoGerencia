@@ -35,7 +35,9 @@ function verificarColisao() {
     if(colidiu){
       voltar();
       somDeColisao.play();
+
       diminuiVelCarros();
+      
       if(pontos > 0){
         pontos--;
       }

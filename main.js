@@ -1,5 +1,6 @@
 function setup() {
   createCanvas(500, 400);
+  somDeFundo.loop();
 }
 
 function draw() {
@@ -9,6 +10,7 @@ function draw() {
   voltaPosicaoInicialCarro();
   mostrarPersonagem();
   moverPersonagem();
+  verificarColisao();
   mostrarPontos();
   contarPontos();
 }
