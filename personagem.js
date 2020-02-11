@@ -1,6 +1,6 @@
 let xPersonagem = 200; //posição horizontal do personagem
 let yPersonagem = 370; //posição vertical do personagem
-
+let colidiu = false;
 let pontos = 0;
 
 function mostrarPersonagem() {
@@ -29,10 +29,26 @@ function voltar(){
     yPersonagem = 370;
 }
 
+function verificarColisao() {
+  for (let i = 0; i < imgCarros.length; i++){
+    colidiu = collideRectCircle(xCarros[i], yCarros[i], widthCarro, heightCarro, xPersonagem, yPersonagem, 15);
+    if(colidiu){
+      voltar();
+      somDeColisao.play();
+      diminuiVelCarros();
+      if(pontos > 0){
+        pontos--;
+      }
+    }
+  }
+}
+
 function contarPontos(){
     if(yPersonagem < 15){
       pontos++;
+      aumentaVelCarros();
       voltar();
+      somDePonto.play();
     }
 }
 
