@@ -35,6 +35,9 @@ function verificarColisao() {
     if(colidiu){
       voltar();
       somDeColisao.play();
+
+      diminuiVelCarros();
+      
       if(pontos > 0){
         pontos--;
       }
@@ -45,6 +48,7 @@ function verificarColisao() {
 function contarPontos(){
     if(yPersonagem < 15){
       pontos++;
+      aumentaVelCarros();
       voltar();
       somDePonto.play();
     }

@@ -25,3 +25,19 @@ function voltaPosicaoInicialCarro(){
     }
   }
 }
+
+function aumentaVelCarros(){
+  if(pontos%5 == 0){
+    for(i=0;i<imgCarros.length; i++){
+      velocidadeCarros[i] = velocidadeCarros[i] + 0.3;
+    }
+  }
+}
+
+function diminuiVelCarros(){
+  if(pontos%5 == 0){
+    for(i=0;i<imgCarros.length; i++){
+      velocidadeCarros[i] = velocidadeCarros[i] - 0.3;
+    }
+  }
+}
