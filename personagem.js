@@ -1,5 +1,5 @@
 let xPersonagem = 200; //posição horizontal do personagem
-let yPersonagem = 370; //posição vertical do personagem
+let yPersonagem = 375; //posição vertical do personagem
 let colidiu = false;
 let pontos = 0;
 
@@ -8,10 +8,14 @@ function mostrarPersonagem() {
 }
 
 function podeMover(){
-    if(yPersonagem < 370) {
+    if(yPersonagem < 375) {
         return true;
     }
     return false;
+}
+
+function podeMoverX() {
+  return (xPersonagem > 10 && xPersonagem<430) ? true : false;
 }
 
 function moverPersonagem() {
@@ -23,10 +27,20 @@ function moverPersonagem() {
         yPersonagem = yPersonagem + 3;
       }
     }
+    if (keyIsDown(LEFT_ARROW)) {
+      if (podeMoverX()) {
+        xPersonagem = xPersonagem - 3;
+      }
+    }
+    if (keyIsDown(RIGHT_ARROW)) {
+      if (podeMoverX()) {
+        xPersonagem = xPersonagem + 3;
+      }
+    }
 }
 
 function voltar(){
-    yPersonagem = 370;
+    yPersonagem = 375;
 }
 
 function verificarColisao() {
