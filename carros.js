@@ -35,7 +35,7 @@ function aumentaVelCarros(){
 }
 
 function diminuiVelCarros(){
-  if(pontos%5 == 0){
+  if((pontos+1)%5 == 0){
     for(i=0;i<imgCarros.length; i++){
       velocidadeCarros[i] = velocidadeCarros[i] - 0.3;
     }
